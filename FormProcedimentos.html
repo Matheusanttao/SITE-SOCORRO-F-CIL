@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Socorro fácil</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-7bG7IyBLsWd0n+p10Iv9i2+kbvB1Nkej92J5B+Wpf/wD9tVqjyqS2eUUEygCnTjLBMqCXQgX97fZQccJPB+13Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/3195e8c7ef.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!--navbar inicio-->
+  <div class="container-fluid" style="padding:10px; background-color: rgb(240, 240, 240);">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col d-flex col-12 col-md-2 col-lg-2 align-items-center"> <!--logo inicial-->
+          <div class="col d-flex justify-content-center" style="text-align: center;">
+            <a href="home.html">
+              <img src="imagem/Logo inicial (1).png" alt="" class="logo img-fluid logo-lg">
+            </a>
+          </div>
+
+        </div>
+
+        <!--sidenav-->
+        <div class="col-12 col-md-2 col-lg-2 d-flex align-items-center justify-content-center"><!--botão perfil-->
+          <div class="col d-flex justify-content-center">
+            <a href="#">
+              <button type="button" class="btn" onclick="document.getElementById('mySidenav').classList.toggle('open')">
+                <img src="imagem/preto.png" alt="Botão Menu">
+              </button>
+            </a>
+            <!-- Sidenav -->
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn"
+                onclick="document.getElementById('mySidenav').classList.toggle('open')">&times;</a>
+              <a style="font-weight: bold;">CATEGORIA</a>
+              <a href="ajuda.html">AJUDA</a>
+              <a href="cardprocedimento.html">PROCEDIMENTO</a>
+              <a href="CARDS NOTICIAS.html">NOTÍCIAS</a>
+              <a href="index.html">SAIR</a>
+            </div>
+            <!--teste-->
+          </div>
+        </div>
+        <!--SEDENAV TES FINAL-->
+        <div class="col-md-4 mt-4 col-lg-4 col-xl-4 col-xxl-4 d-flex align-items-center"> <!--pesquisa-->
+          <div class="input-group" style="margin-top:20px;">
+            <input type="text" class="form-control bg-light" placeholder="Digite sua dúvida" aria-label="Pesquisar">
+            <button class="btn btn-secondary" type="button">
+              <i class="bi bi-search"></i> <!-- ícone de lupa -->
+            </button>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-2 col-lg-2 d-flex align-items-center justify-content-center"><!--botão perfil-->
+          <div class="col d-flex justify-content-center">
+            <a href="perfil.html">
+              <button type="button" class="btn">
+                <img src="imagem/azul.png" alt="Botão Menu 1">
+              </button>
+            </a>
+          </div>
+        </div>
+        <div
+          class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-2 d-flex align-items-center justify-content-center ajuda-text">
+          <span class="d-none d-xxl-inline" style="font-size: 24px; font-weight: bold; text-align: center;">
+            <br>
+            <br>
+            Ajuda para todos, em qualquer momento <br>
+            <a href="tel:191" style="text-decoration: none;"><i class="fas fa-phone"></i> 191</a>
+
+        </div>
+      </div>
+    </div>
+    <!--navbar final-->
+    <!--MENU-->
+    <div class="container-fluid container-border">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-sm text-center">
+            <h5 class="card-title"><a href="home.html"><b>INICIO</b></a></h5>
+          </div>
+          <div class="col-sm text-center">
+            <h5 class="card-title"><a href="CARDS NOTICIAS.html"><b>NOTÍCIAS</b></a></h5>
+          </div>
+          <div class="col-sm text-center">
+            <h5 class="card-title"><a href="cardprocedimento.html"><b>PROCEDIMENTOS</b></a></h5>
+          </div>
+          <div class="col-sm text-center">
+            <h5 class="card-title"><a href="ajuda.html"><b>AJUDA</b></a></h5>
+          </div>
+          <div class="col-sm text-center" style="display: inline-block;">
+            <h5 class="card-title"><a href="formulario.html"><b>COMPARTILHE</b></a></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Form cadastro procedimento-->
+  <div class="container mt-5">
+    
+    <div class="my-form" style="width: 60%;">
+      <h2 style="text-align: center;">Cadastre um procedimento</h2>
+    <form id="cadastroForm" class="my-form">
+      <div class="mb-3">
+        <label for="nomeProcedimento" class="my-label">Nome</label>
+        <input type="text" class="form-control" id="nomeProcedimento" style="font-size: 12pt;"
+         placeholder="Insira o nome do procedimento">
+      </div>
+      <div class="mb-3">
+        <label class="my-label" for="descricaoProcedimento">Descrição</label>
+        <textarea class="form-control" id="descricaoProcedimento" rows="5" 
+        placeholder="Descreva como o procedimento deve ser realizado"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+      <p style="text-align: justify; margin-top: 15px;  color: #3f51b5;
+      font-weight: bold;"> Assim que os dados forem validadados o procedimento será inserido no site!</p>
+    </div>
+  </form>
+  </div>
+  <br>
+  <br>
+
+  <!--telefone-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      var phoneNumber = "192";
+      var message = "Discagem rápida! SOS!";
+      var button = '<a href="tel:' + phoneNumber + '" class="phone-button">' + message + '</a>';
+      $('body').append(button);
+    });
+  </script>
+  <!--telefone-->
+  <!--footer-->
+  <div class="container-fluid" style="padding:10px; background-color: rgb(240, 240, 240);">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 text-center">
+          <h5>Emergência</h5>
+          <ul class="list-unstyled">
+            <li><a href="tel:192" class="text-decoration-none">Samu</a></li>
+            <li><a href="tel:190" class="text-decoration-none">Polícia</a></li>
+            <li><a href="tel:193" class="text-decoration-none">Bombeiro</a></li>
+
+          </ul>
+        </div>
+        <div class="col-md-3 text-center">
+          <h5>Links úteis</h5>
+          <ul class="list-unstyled">
+            <li><a href="ajuda.html" class="text-decoration-none">Ajuda</a></li>
+            <li><a href="sobrenos.html" class="text-decoration-none">Sobre nós</a></li>
+            <li><a href="mailto:socorro.facil@gmail.com" class="text-decoration-none">Reclamação</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5 class="text-center">Nossas redes sociais</h5>
+          <ul class="list-unstyled align-items-center">
+            <li class="d-flex justify-content-center">
+              <a href="https://instagram.com/socorrofacil?igshid=MmJiY2I4NDBkZg==" target="_blank">
+                <img src="imagem/icone redes.png" alt="rede social">
+              </a>
+
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 text-center">
+          <h5>Nossos contatos</h5>
+          <ul class="list-unstyled">
+            <li>
+              <i class="fa fa-map-marker"></i>
+              <a href="https://www.google.com/maps?q=Betim+MG" style="text-decoration: none;">Betim / MG</a>
+            </li>
+            <li>
+              <i class="bi bi-phone"></i>
+              <a href="tel:0800705101" style="text-decoration: none;">0800 705 101</a>
+            </li>
+            <a href="mailto:socorro.facil@gmail.com" class="text-decoration-none">
+              <i class="bi bi-envelope"></i> socorro.facil@gmail.com
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-12">
+      <div class="col-md-12 text-center">
+        <p class="mb-0 text-bg-dark">
+          Copyright &copy; 2023
+          <a href="#" target="_blank" style="text-decoration:none;">Socorro Fácil
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--FIM FOOTER-->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <script src="FormProcedimentos.js"></script>
+</body>
+
+</html>

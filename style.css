@@ -1,0 +1,805 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.borda-vertical>div {
+  border-right: 1px solid #ccc;
+  padding: 10px;
+}
+
+/*tete margem inicio pagina*/
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+.container-border {
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  width: 100%;
+}
+
+.col-sm {
+  padding: 10px;
+}
+
+.card-title a {
+  color: black;
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: blue;
+}
+
+.phone-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: #166ec7;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.rounded-background {
+  background-color: #e7e1e1e9;
+  border-radius: 20px;
+  padding: 10px;
+  display: inline-block;
+}
+
+@media (max-width: 992px) {
+  .ajuda-text span {
+    font-size: 18px;
+  }
+}
+
+/*jessica inicia*/
+/* Altera a cor de fundo do formulário */
+.my-form {
+  max-width: 1300px;
+  /* Ajuste o valor conforme necessário */
+  margin: 0 auto;
+  /* Centraliza horizontalmente a div */
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+/* Define a cor da fonte dos rótulos */
+.my-label {
+  color: #3f51b5;
+  font-weight: bold;
+}
+
+/* Estilo título da notícia */
+#titulo {
+  width: 100%;
+  font-size: 24px;
+  border: none;
+  border-bottom: 2px solid #3f51b5;
+  margin-bottom: 10px;
+}
+
+/* Estilo botão selecionar */
+#selecionar {
+  background-color: #3f51b5;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+/* Estilo notícia */
+#corpo-noticia {
+  width: 100%;
+  height: 200px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  resize: none;
+}
+
+/*Estilo avaliação*/
+.rating-stars {
+  display: inline-block;
+  font-size: 24px;
+  color: gold;
+}
+
+.rating-stars input[type="radio"] {
+  display: none;
+}
+
+.rating-stars label {
+  cursor: pointer;
+}
+
+.rating-stars label:before {
+  content: "\2605";
+}
+
+.rating-stars input[type="radio"]:checked~label:before {
+  color: orange;
+}
+
+
+/* Estilo para o botão de enviar */
+button[type=submit] {
+  background-color: #3f51b5;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Estilo para o botão de enviar quando o mouse passa */
+button[type=submit]:hover {
+  background-color: #1a237e;
+}
+
+/*jessica final*/
+
+
+/* Altera a cor de fundo do formulário */
+form {
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+/* Define a cor da fonte dos rótulos */
+label {
+  color: #3f51b5;
+  font-weight: bold;
+}
+
+/* Estilo título da notícia */
+#titulo {
+  width: 100%;
+  font-size: 24px;
+  border: none;
+  border-bottom: 2px solid #3f51b5;
+  margin-bottom: 10px;
+}
+
+/* Estilo imagem de capa */
+#imagem {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Estilo botão selecionar */
+#selecionar {
+  background-color: #3f51b5;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Estilo descrição da imagem */
+#descricao-imagem {
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+/* Estilo notícia */
+#corpo-noticia {
+  width: 100%;
+  height: 200px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  resize: none;
+}
+
+
+/* Estilo para o botão de enviar */
+button[type=submit] {
+  background-color: #3f51b5;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Estilo para o botão de enviar quando o mouse passa */
+button[type=submit]:hover {
+  background-color: #1a237e;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: white;
+  height: 100vh;
+}
+
+main {
+
+  background-color: white;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.img-not {
+  width: 80%;
+  height: 80%;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.titulo-noticia {
+  width: 25%;
+  text-align: start;
+  margin-bottom: 50px;
+}
+
+.conteudo-noticia {
+  text-align: justify;
+}
+
+.noticia-sf {
+  margin-bottom: 70px;
+}
+
+
+/*Excluir dps*/
+nav {
+  background-color: rgb(85, 167, 197);
+  padding: 10px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 10px;
+}
+
+nav li {
+  margin-left: 7px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+nav li a:hover {
+  background-color: white;
+  color: black;
+}
+
+#logo-span {
+  color: rgb(184, 7, 7);
+}
+
+h1 {
+  padding-top: 20px;
+}
+
+h2 {
+  padding-left: 20px;
+}
+
+h3 {
+  padding-left: 20px;
+}
+
+h3 {
+  padding-left: 20px;
+}
+
+h4 {
+  padding-left: 20px;
+}
+
+p {
+  padding-left: 20px;
+}
+
+footer {
+  padding-top: 20px;
+}
+
+/* Altera a cor de fundo do formulário */
+form {
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+/* Define a cor da fonte dos rótulos */
+label {
+  color: #3f51b5;
+  font-weight: bold;
+}
+
+/* Estilo título da notícia */
+#titulo {
+  width: 100%;
+  font-size: 24px;
+  border: none;
+  border-bottom: 2px solid #3f51b5;
+  margin-bottom: 10px;
+}
+
+/* Estilo imagem de capa */
+#imagem {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Estilo botão selecionar */
+#selecionar {
+  background-color: #3f51b5;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Estilo descrição da imagem */
+#descricao-imagem {
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+/* Estilo notícia */
+#corpo-noticia {
+  width: 100%;
+  height: 200px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  resize: none;
+}
+
+
+/* Estilo para o botão de enviar */
+button[type=submit] {
+  background-color: #3f51b5;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Estilo para o botão de enviar quando o mouse passa */
+button[type=submit]:hover {
+  background-color: #1a237e;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: white;
+  height: 100vh;
+}
+
+main {
+
+  background-color: white;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.img-not {
+  width: 90%;
+  height: 90%;
+  border: none;
+  border-radius: 8px;
+}
+
+.titulo-noticia {
+  width: 55%;
+  text-align: start;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.conteudo-noticia {
+  text-align: justify;
+}
+
+.noticia-sf {
+  margin-bottom: 70px;
+}
+
+
+/*Excluir dps*/
+nav {
+  background-color: rgb(85, 167, 197);
+  padding: 10px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 10px;
+}
+
+nav li {
+  margin-left: 7px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+nav li a:hover {
+  background-color: white;
+  color: black;
+}
+
+#logo-span {
+  color: rgb(184, 7, 7);
+}
+
+/*MATHEUS MENU*/
+
+/* Telefone */
+
+.phone-button {
+  background-color: red;
+  /* Cor de fundo do botão */
+  color: white;
+  /* Cor do texto do botão */
+  padding: 10px 20px;
+  /* Espaçamento interno do botão */
+  border: none;
+  /* Remover borda do botão */
+  border-radius: 5px;
+  /* Arredondar as bordas do botão */
+  text-decoration: none;
+  /* Remover sublinhado do link */
+}
+
+.phone-button:hover {
+  color: black;
+  /* Cor do texto do botão ao passar o mouse */
+}
+
+/* sobre nos quadro*/
+.nomes-container {
+  text-align: center;
+}
+
+.nomes-container ul {
+  padding: 0;
+  list-style: none;
+}
+
+.nomes-container li {
+  margin-bottom: 10px;
+}
+
+/* andre*/
+h1 {
+  text-align: center
+}
+
+;
+
+/* DANILO*/
+h1 {
+  padding-top: 20px;
+}
+
+h2 {
+  padding-left: 20px;
+}
+
+h3 {
+  padding-left: 20px;
+}
+
+h3 {
+  padding-left: 20px;
+}
+
+h4 {
+  padding-left: 20px;
+}
+
+p {
+  padding-left: 20px;
+}
+
+footer {
+  padding-top: 20px;
+}
+
+/* DANILO*/
+.card {
+  height: 100%;
+}
+
+/* login usuario */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: rgb(245, 245, 245);
+  color: black;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 40vw;
+  margin: 145px auto;
+}
+
+input {
+  font-size: 1.1rem;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid black;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.botoes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cadastro,
+.limpa {
+  width: 15vw;
+  padding: 10px;
+  font-size: 1.1rem;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.cadastro {
+  background-color: rgb(184, 7, 7);
+}
+
+.limpa {
+  background-color:  black;
+}
+
+.entrar {
+  width: 15vw;
+  padding: 10px;
+  font-size: 1.1rem;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  background-color:rgb(184, 7, 7);
+}
+
+a {
+  text-decoration: none;
+  margin-top: 30px;
+  font-weight: bold;
+  color:rgb(184, 7, 7);
+  text-align: center;
+}
+
+/* login usuario */
+/*formulário de cadastro de perfil */
+.meu-formulario {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.meu-formulario h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.meu-formulario label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.meu-formulario input[type="text"],
+.meu-formulario input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.meu-formulario input[type="text"]:focus,
+.meu-formulario input[type="email"]:focus {
+  border-color: #333;
+}
+
+.meu-formulario .botoes {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.meu-formulario .limpa,
+.meu-formulario .cadastro {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.meu-formulario .limpa {
+  background-color: black;
+}
+
+.meu-formulario .cadastro {
+  background-color: rgb(184, 7, 7);
+}
+
+.meu-formulario .limpa:hover {
+  background-color: black;
+}
+
+.meu-formulario .cadastro:hover {
+  background-color: rgb(184, 7, 7);
+}
+
+@media screen and (max-width: 480px) {
+  .meu-formulario {
+    width: 90%;
+  }
+}
+/*botaoo voltar*/
+.botao-voltar {
+  width: 15vw;
+  padding: 10px;
+  font-size: 1.1rem;
+  border: 0;
+  border-radius: 4px;
+  color: white;
+  background-color: black;
+}
+
+/* Estilos para o sidenavvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(240, 240, 240);
+  overflow-x: hidden;
+  transition: width 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: color 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Estilos adicionais para o conteúdo da página */
+.main {
+  transition: margin-left .5s;
+  padding: 16px;
+  margin-left: 0; /* Adicionado para alinhar no canto */
+}
+
+/* Estilos para ajustar o conteúdo quando o sidenav estiver aberto */
+#mySidenav.open {
+  width: 400px;
+}
+
+#mySidenav.open + .main {
+  margin-left: 400px; /* Ajuste o valor conforme necessário */
+}
